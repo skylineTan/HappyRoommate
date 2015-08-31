@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <com.jude.easyrecyclerview.EasyRecyclerView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recyclerview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_empty="@layout/view_list_empty"
+    app:layout_progress="@layout/view_list_progress"
+    app:scrollbarStyle="insideInset" />
+<!--表示在padding区域内并且插入在view后面-->

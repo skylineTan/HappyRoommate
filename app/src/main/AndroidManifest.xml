@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tzy.happyroommate" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+
+    <application
+        android:name=".app.APP"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme.Base" >
+        <meta-data
+            android:name="MODEL"
+            android:value="
+            com.tzy.happyroommate.model.TrendModel,
+            com.tzy.happyroommate.model.ChatModel,
+            com.tzy.happyroommate.model.UserModel,
+            com.tzy.happyroommate.model.CommentModel,
+            com.tzy.happyroommate.model.AttentionModel,
+            com.tzy.happyroommate.model.RoomModel,
+            com.tzy.happyroommate.model.ArticleModel,
+            com.tzy.happyroommate.model.NoteModel"
+
+            ></meta-data>
+        <activity
+            android:name=".module.main.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.Base">
+        </activity>
+        <activity android:name=".module.launch.FlowAnimation">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".app.BaseActivity"
+            android:theme="@style/AppTheme.Base"  />
+        <activity android:name=".module.drawer.UserInfoActivity"
+            android:label="修改资料"/>
+        <activity android:name=".module.roomspace.RoomSpaceActivity"
+            android:label="空间"/>
+        <activity android:name=".module.main.AddFriendActivity"
+            android:label="添加好友"/>
+        <activity android:name=".module.main.AddRoomActivity"
+            android:label="添加寝室"/>
+        <activity android:name=".module.contact.ContactDetailActivity"
+            android:label="好友资料"/>
+        <activity android:name=".module.login.LoginActivity"
+            android:label="登录"
+            android:theme="@style/AppTheme.Base"/>
+        <activity android:name=".module.register.RegisterActivity"
+            android:label="注册"/>
+        <activity android:name=".module.trend.TrendsDetailActivity"
+            android:label="动态详情"/>
+        <activity android:name=".module.trend.WriteTrendActivity"
+            android:label="写动态"
+            android:launchMode="singleTask"/>
+        <activity android:name=".module.article.ArticleWriteActivity"
+            android:label="写文章"/>
+        <activity android:name=".module.article.ArticleDetailActivity"
+            android:label="文章详情"/>
+        <activity android:name=".module.drawer.AboutActivity"
+            android:label="关于"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.tzy.happyroommate.module.drawer.UserInfoActivity">
+    <item
+        android:id="@+id/complete"
+        android:title="complete"
+        android:orderInCategory="80"
+        android:icon="@mipmap/ic_check"
+        app:showAsAction="ifRoom" />
+
+</menu>

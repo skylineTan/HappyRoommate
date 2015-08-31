@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <include layout="@layout/include_toolbar"
+        android:id="@+id/toolbar"/>
+
+        <RelativeLayout
+            android:clickable="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <RelativeLayout
+                android:id="@+id/v_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:descendantFocusability="blocksDescendants" >
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/face"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="8dp"
+                    fresco:actualImageScaleType="focusCrop"
+                    fresco:roundAsCircle="true"
+                    fresco:progressBarAutoRotateInterval="1000"
+                    />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/face"
+                    android:layout_marginLeft="8dp"
+                    android:layout_alignTop="@+id/face"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    tool:text="娴峰簳鎹�"
+                    android:textSize="14sp"/>
+
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="left"
+                    tool:text="30鍒嗛挓鍓�"
+                    android:layout_toRightOf="@+id/face"
+                    android:layout_alignBottom="@+id/face"
+                    android:textColor="@color/hint_foreground_material_light"
+                    android:textSize="12sp" />
+                <com.jude.tagview.TAGView
+                    android:id="@+id/view_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/face"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:tag_text="删除"
+                    app:tag_color="?colorPrimary"
+                    app:tag_text_color="#ffffff"
+                    app:tag_text_size="13sp"
+                    app:tag_padding="2dp"
+                    app:tag_radius="2dp"
+                    />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_below="@+id/v_msg"
+                android:id="@+id/mainContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                tool:text="鏃╀笂璧峰簥渚嬭缈绘湅鍙嬪湀锛屾槰澶╀竴绡囨枃绔犺鍏叡鍙烽噷鐨勫ぇv杞浇锛屾垜灏辨兂鐪嬬湅鏈夋病鏈夌伀鐪奸噾鐫涚殑灏忎紮浼达紝閫忚繃椹敳鎶婃垜璁ゅ嚭鏉ャ�傜粨鏋滄垜鍙戠幇锛屾湅鍙嬪湀涓轰簡鍙︿竴浠舵洿澶х殑浜嬪効鐐搁攨浜嗐��"
+                />
+
+            <GridView
+                android:id="@+id/imageList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mainContent"
+                android:clickable="false"
+                android:columnWidth="80dp"
+                android:focusable="false"
+                android:horizontalSpacing="6dp"
+                android:numColumns="2"
+                android:layout_margin="8dp"
+                android:verticalSpacing="4dp"
+                android:visibility="gone"/>
+
+
+            <LinearLayout
+                android:id="@+id/v_msg2"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/imageList"
+                android:gravity="right|center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp">
+
+                <ImageView
+                    android:id="@+id/view_praise"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@mipmap/ic_thumb_up_grey"/>
+                <TextView
+                    android:id="@+id/praise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    tool:text="8"/>
+                <ImageView
+                    android:id="@+id/view_comment"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:src="@mipmap/ic_tooltip_text_grey"/>
+                <TextView
+                    android:id="@+id/comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    tool:text="8"/>
+
+            </LinearLayout>
+            <View
+                android:id="@+id/divider"
+                android:layout_below="@+id/v_msg2"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_margin="8dp"
+                android:background="@android:color/darker_gray"/>
+            <com.jude.easyrecyclerview.EasyRecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider"
+                />
+        </RelativeLayout>
+
+
+
+
+</LinearLayout>

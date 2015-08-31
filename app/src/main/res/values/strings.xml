@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">微室</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">设置</string>
+    <!--drawer-->
+    <string name="drawer_item_room_name">我的寝室</string>
+    <string name="drawer_item_live_time">同居时间：</string>
+    <string name="drawer_item_birthday">生日</string>
+    <string name="drawer_item_secret">秘密</string>
+    <string name="drawer_item_secret_space">私密空间</string>
+    <string name="drawer_item_setting">关于</string>
+    <string name="drawer_item_sign_out">退出</string>
+    <string name="drawer_item_set_info">修改资料</string>
+    <!--分割线-->
+    <string name="add_gender">性别</string>
+    <string name="logout">退出登陆</string>
+    <string name="network_tips">当前网络不可用,请检查您的网络!</string>
+    <string name="toast_error_password_null">密码不能为空</string>
+    <string name="toast_error_username_null">用户名不能为空</string>
+    <string name="toast_error_comfirm_password">输入的两次密码不一致</string>
+    <string name="username">用户名/昵称/id/email</string>
+
+    <!--分割线-->
+    <string name="add_room">添加寝室</string>
+    <string name="info_name">修改昵称</string>
+    <string name="info_sex">修改性别</string>
+    <string name="info_city">修改地区</string>
+    <string name="info_emial">修改email</string>
+    <string name="info_age">修改年龄</string>
+    <string name="info_room_name">修改寝室名</string>
+    <string name="info_edit_name">请输入昵称</string>
+    <string name="info_edit_age">请输入年龄</string>
+    <string name="info_edit_sex">请选择性别</string>
+    <string name="info_edit_city">请选择地区</string>
+    <string name="info_edit_email">请输入email</string>
+    <string name="info_edit_room_name">请输入寝室名</string>
+    <string name="dialog_positive">确定</string>
+    <string name="progress_update_face">正在更新头像</string>
+    <string name="create_room">创建寝室</string>
+    <string name="search_room">请选择查询方式</string>
+    <string name="main_room_name">修改寝室名</string>
+    <string name="main_room_name_hint">请填写要修改的寝室名</string>
+    <string name="main_room_info">寝室资料</string>
+    <!--tab-->
+    <string name="tab_1">广场</string>
+    <string name="tab_2">关注</string>
+    <string name="tab_3">动态</string>
+    <string name="tab_4">便利贴</string>
+
+
+    <!--评论-->
+    <string name="dialog_comment">评论</string>
+    <string name="dialog_comment_edit">发表评论</string>
+    <string name="progress_update_now">正在更新</string>
+    <string name="dialog_delete">你确定要删除吗？</string>
+    <string name="dialog_delete_content">删除后不可恢复</string>
+    <string name="register_username">请输入用户名</string>
+    <string name="register_password">请输入密码</string>
+    <string name="register_password_two">再次确认密码</string>
+    <string name="register_email">请输入email</string>
+
+    <!--便利贴-->
+    <string name="dialog_send_note">写一个便利贴</string>
+    <string name="dialog_sure">确定</string>
+    <string name="dialog_concel">取消</string>
+
+    <string name="intro_title_1">相遇</string>
+    <string name="intro_desc_1">茫茫人海中，我与你们相遇</string>
+    <string name="intro_title_2">相识</string>
+    <string name="intro_desc_2">曾经的陌生，到最后无话不说</string>
+    <string name="intro_title_3">相知</string>
+    <string name="intro_desc_3">一路走来，感谢有你们，我的室友们</string>
+    <string name="intro_title_4">相爱</string>
+    <string name="intro_desc_4">微室，为更好的寝室互动而生</string>
+
+    <string name="login_1">广场：公开分享寝室文章、经历</string>
+    <string name="login_2">关注：关注自己想关注的人</string>
+    <string name="login_3">动态：自己和别人寝室最近的动态</string>
+    <string name="login_4">便利贴：仅寝室内部可见</string>
+    <string name="login_5">你是否在寻找一个地方</string>
+    <string name="login_6">只属于你和你住的人</string>
+    <string name="login_7">微室做得到</string>
+
+</resources>
