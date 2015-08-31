@@ -27,6 +27,6 @@
 ![image](https://github.com/skylineTan/HappyRoommate/blob/master/Art/img6.png)![image](https://github.com/skylineTan/HappyRoommate/blob/master/Art/img7.png)![image](https://github.com/skylineTan/HappyRoommate/blob/master/Art/img8.png)![image](https://github.com/skylineTan/HappyRoommate/blob/master/Art/img9.png)![image](https://github.com/skylineTan/HappyRoommate/blob/master/Art/img10.png)        
 代码存在的问题：
 1.字符串没有全部放到string里面
-2.发布前没有出现问题，发布之后我测试有可能会修改不了资料的问题，当好友没有发表动态可能无法查看个人空间，新用户发布便利贴可能要先退出，在登录便利贴是发布了的。
+2.发布前是没有出现问题的，后面修改了几行代码，发布之后我再测试有可能会修改不了资料的问题，当好友没有发表动态可能无法查看个人空间，新用户发布便利贴可能要先退出，再登录便利贴是发布了的。
 3.bmob的查询语句由于是以寝室为中心，可能代码有点多。
 4.edittext不能收键盘，影响用户体验
