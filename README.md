@@ -4,8 +4,9 @@
 2.手机扫描二维码下载        
 ![image](https://github.com/skylineTan/HappyRoommate/blob/master/Art/%E5%BE%AE%E5%AE%A4%E4%BA%8C%E7%BB%B4%E7%A0%81.png)      
 ###二、应用目的
-开始的时候看到QQ空间有情侣空间的功能，没有多少人使用，本来想写一个情侣空间的，但是类似的app太多，所以最后还是决定写了这个以寝室为中心的类似于寝室空间的app。
+开始的时候看到QQ空间有情侣空间的功能，没有多少人使用，本来想写一个情侣空间的，但是类似的app太多，所以最后还是决定写了这个以寝室为中心的类似于寝室空间的app,由于市场上app太多，所以需要给用户一个不卸载的理由。
 ###三、主要功能：
++  测试账号：ttttt 密码：ttttt
 +  利用bmob实现的登录、注册和数据、文件存储
 +  提供昵称、用户名、email关注好友，获得粉丝列表，修改个人信息，创建、添加寝室，点击查看好友个人资料      
 ![image](https://github.com/skylineTan/HappyRoommate/blob/master/Art/screenshot2.png)![image](https://github.com/skylineTan/HappyRoommate/blob/master/Art/screenshot4.png)
@@ -27,6 +28,6 @@
 ![image](https://github.com/skylineTan/HappyRoommate/blob/master/Art/img6.png)![image](https://github.com/skylineTan/HappyRoommate/blob/master/Art/img7.png)![image](https://github.com/skylineTan/HappyRoommate/blob/master/Art/img8.png)![image](https://github.com/skylineTan/HappyRoommate/blob/master/Art/img9.png)![image](https://github.com/skylineTan/HappyRoommate/blob/master/Art/img10.png)        
 代码存在的问题：
 1.字符串没有全部放到string里面
-2.发布前是没有出现问题的，后面修改了几行代码，发布之后我再测试有可能会修改不了资料的问题，当好友没有发表动态可能无法查看个人空间，新用户发布便利贴可能要先退出，再登录便利贴是发布了的。
+2.发布前是没有出现问题的，后面修改了几行代码，发布之后我再测试有可能会修改不了资料的问题，但是再登录是修改了的，新用户发布便利贴可能要先退出，再登录便利贴也是可以发布的。
 3.bmob的查询语句由于是以寝室为中心，可能代码有点多。
 4.edittext不能收键盘，影响用户体验
