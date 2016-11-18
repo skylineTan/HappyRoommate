@@ -1,2 +1,2 @@
-# WeRoom v2.0
+# WeRoom V2.0
 to be continued...
